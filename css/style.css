@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*{ margin: 0; padding: 0; }
+html,body{ height: 100%; }
+body,a{ color: #666;}
+ol,ul{ list-style: none;}
+
+body{
+  background: #e2e1d1;   /*#3495db*/
+  color: #343233;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 1s ease;
+}
+a{
+  display: inline-block;
+  color: #;/*#c8392b */
+  background: #00704a;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+nav{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: #1e3932;
+  min-width: 380px; /*모바일에서 380이하로 안줄어들게 하겠*/
+}
+nav li{
+  display: inline-block;
+  line-height: 67px;
+  padding: 0px 10px;
+}
+nav li a{
+  color: white;
+}
+nav li:first-child a{
+  background-color: #afa946;
+  /* border: 2px solid white;
+  box-sizing: border-box; */
+}
+.slide:first-child{
+  background: url('../img/logo.png') no-repeat 50% 25px fixed, url('../img/bottom_logo.png') no-repeat 50% 88% fixed;
+}
+.slide{
+  background: url('../img/bottom_logo.png') no-repeat 50% 94% fixed;
+  height: 100vh;
+}
+.slide .inside.home{
+  padding-top: 0px;
+}
+.slide .inside{
+  height:100vh;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide .inside .items.home{
+  height: 60%;
+  padding-top: 110px;
+}
+.slide .inside .items.home h2{
+  padding: 30px 0;
+}
+.slide .inside .items{
+  width: 100vw;
+  padding-top: 170px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  height: 60%;
+  background-color:#fff;
+}
+.slide .inside .items .tit_box{
+  position: relative;
+  top: -330px;
+  margin: 0 auto;
+}
+.slide .inside .items .tit_box p{
+  font-size: 14px;
+  font-weight: bold;
+}
+.slide .inside .items .tit_box span{
+  margin: 7px 0;
+  display: inline-block;
+}
+.slide .inside .items .con_box{
+  position: relative;
+  top: -250px;
+  overflow: hidden;
+}
+.slide .inside .items p{
+  line-height: 27px;
+  letter-spacing: -1;
+}
+/* .slide .inside{
+  position: relative;
+  transition: 0.5s;
+  left: -200px;
+}
+.slide.on .inside{
+  left: 50px;
+  margin-left: -50%
+}
+.slide:nth-child(3).on .inside{
+  left: -200px;
+  margin-left: -50%
+  top: 200px;
+} */
